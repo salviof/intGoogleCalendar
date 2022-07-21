@@ -27,7 +27,7 @@ public class FabIntGoogleCalendarTest extends TestesApiRest {
     public void testValues() {
         try {
             SBCore.configurar(new ConfiguradorCoreTestesGoogleCalendar(), SBCore.ESTADO_APP.DESENVOLVIMENTO);
-            gerarCodigos(FabIntGoogleCalendar.class);
+            gerarCodigosChamadasEndpoint(FabIntGoogleCalendar.class);
         } catch (Throwable t) {
             System.out.println("Deu merda");
         }
