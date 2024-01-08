@@ -29,6 +29,7 @@ import com.super_bits.modulosSB.SBCore.integracao.libRestClient.api.FabTipoAgent
 import com.super_bits.modulosSB.SBCore.integracao.libRestClient.implementacao.ChamadaHttpSimples;
 import com.super_bits.modulosSB.SBCore.integracao.libRestClient.implementacao.UtilSBApiRestClientOauth2;
 import com.super_bits.modulosSB.SBCore.modulos.objetos.registro.Interfaces.basico.ItfUsuario;
+import jakarta.json.JsonObject;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
@@ -96,8 +97,8 @@ public class GestaoTokenRestGooglecalendar extends GestaoTokenOath2 {
     }
 
     @Override
-    public ItfTokenDeAcessoExterno extrairToken(JSONObject jsonObject) {
-        return null;
+    public ItfTokenDeAcessoExterno extrairToken(JsonObject pJson) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public GestaoTokenRestGooglecalendar(
