@@ -6,7 +6,7 @@ import com.super_bits.modulosSB.SBCore.integracao.libRestClient.implementacao.Ac
 import com.super_bits.modulosSB.SBCore.integracao.libRestClient.api.FabTipoAgenteClienteApi;
 import com.super_bits.modulosSB.SBCore.integracao.libRestClient.implementacao.AcaoApiIntegracaoSDKEmbarcado;
 import com.super_bits.modulosSB.SBCore.modulos.Controller.Interfaces.ItfResposta;
-import com.super_bits.modulosSB.SBCore.modulos.objetos.registro.Interfaces.basico.ItfUsuario;
+import com.super_bits.modulosSB.SBCore.modulos.objetos.registro.Interfaces.basico.ComoUsuario;
 
 @InfoIntegracaoRestGooglecalendarCalendar(tipo = FabIntGoogleCalendar.AGENDAR_ATIVIDADES)
 public class IntegracaoRestGooglecalendarAgendarAtividades
@@ -15,7 +15,7 @@ public class IntegracaoRestGooglecalendarAgendarAtividades
 
     public IntegracaoRestGooglecalendarAgendarAtividades(
             final FabTipoAgenteClienteApi pTipoAgente,
-            final ItfUsuario pUsuario, final java.lang.Object... pParametro) {
+            final ComoUsuario pUsuario, final java.lang.Object... pParametro) {
         super(FabIntGoogleCalendar.AGENDAR_ATIVIDADES, pTipoAgente, pUsuario,
                 pParametro);
     }

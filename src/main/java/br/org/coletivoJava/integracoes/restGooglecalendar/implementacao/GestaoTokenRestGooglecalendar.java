@@ -28,7 +28,7 @@ import org.json.simple.JSONObject;
 import com.super_bits.modulosSB.SBCore.integracao.libRestClient.api.FabTipoAgenteClienteApi;
 import com.super_bits.modulosSB.SBCore.integracao.libRestClient.implementacao.ChamadaHttpSimples;
 import com.super_bits.modulosSB.SBCore.integracao.libRestClient.implementacao.UtilSBApiRestClientOauth2;
-import com.super_bits.modulosSB.SBCore.modulos.objetos.registro.Interfaces.basico.ItfUsuario;
+import com.super_bits.modulosSB.SBCore.modulos.objetos.registro.Interfaces.basico.ComoUsuario;
 import jakarta.json.JsonObject;
 import java.io.ByteArrayInputStream;
 import java.io.File;
@@ -103,7 +103,7 @@ public class GestaoTokenRestGooglecalendar extends GestaoTokenOath2 {
 
     public GestaoTokenRestGooglecalendar(
             final FabTipoAgenteClienteApi pTipoAgente,
-            final ItfUsuario pUsuario) {
+            final ComoUsuario pUsuario) {
         super(FabIntGoogleCalendar.class, pTipoAgente, pUsuario);
         configuracao = SBCore.getConfigModulo(FabConfigModuloGoogleCalendario.class);
         if (HTTP_TRANSPORT == null) {

@@ -5,7 +5,7 @@
  */
 package com.super_bits.Super_Bits.googleCalendarIntegracao.api;
 
-import com.super_bits.modulosSB.SBCore.integracao.libRestClient.WS.ItfFabricaIntegracaoRest;
+import com.super_bits.modulosSB.SBCore.integracao.libRestClient.WS.ComoFabricaIntegracaoRest;
 import com.super_bits.modulosSB.SBCore.integracao.libRestClient.WS.conexaoWebServiceClient.FabTipoConexaoRest;
 import com.super_bits.modulosSB.SBCore.integracao.libRestClient.WS.conexaoWebServiceClient.InfoConsumoRestService;
 import com.super_bits.modulosSB.SBCore.integracao.libRestClient.api.servicoRegistrado.FabTipoAutenticacaoRest;
@@ -22,7 +22,7 @@ import com.super_bits.modulosSB.SBCore.modulos.ManipulaArquivo.importacao.FabTip
         nomeIntegracao = "googleCalendar",
         tipoAutenticacao = FabTipoAutenticacaoRest.OAUTHV2
 )
-public enum FabIntGoogleCalendar implements ItfFabricaIntegracaoRest {
+public enum FabIntGoogleCalendar implements ComoFabricaIntegracaoRest {
 
     @InfoConsumoRestService(getPachServico = "/api/companies/{0}/contact/{1}/add",
             tipoInformacaoRecebida = FabTipoArquivoImportacao.JSON,
