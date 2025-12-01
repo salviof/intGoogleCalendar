@@ -19,7 +19,7 @@ import com.super_bits.Super_Bits.googleCalendarIntegracao.api.FabConfigModuloGoo
 import com.super_bits.Super_Bits.googleCalendarIntegracao.api.FabIntGoogleCalendar;
 import com.super_bits.modulosSB.SBCore.ConfigGeral.SBCore;
 import com.super_bits.modulosSB.SBCore.ConfigGeral.arquivosConfiguracao.ConfigModulo;
-import com.super_bits.modulosSB.SBCore.UtilGeral.UtilSBCoreDataHora;
+import com.super_bits.modulosSB.SBCore.UtilGeral.UtilCRCDataHora;
 import com.super_bits.modulosSB.SBCore.integracao.libRestClient.WS.oauth.FabStatusToken;
 import com.super_bits.modulosSB.SBCore.integracao.libRestClient.WS.oauth.InfoTokenOauth2;
 import com.super_bits.modulosSB.SBCore.integracao.libRestClient.implementacao.gestaoToken.GestaoTokenOath2;
@@ -144,7 +144,7 @@ public class GestaoTokenRestGooglecalendar extends GestaoTokenOath2 {
 
         InfoTokenOauth2 token = new InfoTokenOauth2(credencial.getAccessToken());
         Long segundosExpiracao = credencial.getExpiresInSeconds();
-        token.setDataHoraExpirarToken(UtilSBCoreDataHora.incrementaSegundos(new Date(), segundosExpiracao.intValue() - 10));
+        token.setDataHoraExpirarToken(UtilCRCDataHora.incrementaSegundos(new Date(), segundosExpiracao.intValue() - 10));
         token.setTokenRefresh(credencial.getRefreshToken());
         return token;
 

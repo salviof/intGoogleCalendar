@@ -11,7 +11,7 @@ import com.google.api.services.calendar.Calendar;
 import com.google.api.services.calendar.model.Event;
 import com.google.api.services.calendar.model.EventDateTime;
 import com.super_bits.modulosSB.SBCore.ConfigGeral.SBCore;
-import com.super_bits.modulosSB.SBCore.UtilGeral.UtilSBCoreDataHora;
+import com.super_bits.modulosSB.SBCore.UtilGeral.UtilCRCDataHora;
 import com.super_bits.modulosSB.SBCore.modulos.objetos.registro.Interfaces.atividadades.ItfAtividadeProgramada;
 import java.io.IOException;
 import java.util.Date;
@@ -52,9 +52,9 @@ public class ApiCalendarioGoogleAtvidadesCRM extends ApiCalendarioGoogle {
 
                     novoEvento.setSummary(atividade.getTitulo());
                     TimeZone zonaTemporal = TimeZone.getTimeZone("America/Sao_Paulo");
-                    Date datacorrigida = UtilSBCoreDataHora.incrementaHoras(atividade.getDataHoraPrevisaoExecucao(), 0);
+                    Date datacorrigida = UtilCRCDataHora.incrementaHoras(atividade.getDataHoraPrevisaoExecucao(), 0);
                     novoEvento.setStart(new EventDateTime().setDateTime(new DateTime(datacorrigida, zonaTemporal)));
-                    novoEvento.setEnd(new EventDateTime().setDateTime(new DateTime(UtilSBCoreDataHora.incrementaMinutos(datacorrigida, 10), zonaTemporal)));
+                    novoEvento.setEnd(new EventDateTime().setDateTime(new DateTime(UtilCRCDataHora.incrementaMinutos(datacorrigida, 10), zonaTemporal)));
 
                     String linkAtividade = atividade.getUrlAtividade();
 
