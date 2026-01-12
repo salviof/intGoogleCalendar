@@ -5,7 +5,7 @@
  */
 package br.org.coletivoJava.integracoes.restGooglecalendar.implementacao.sdkEmbarcado.google.calendario;
 
-import com.super_bits.modulosSB.SBCore.modulos.objetos.registro.Interfaces.atividadades.ItfAtividadeProgramada;
+import com.super_bits.modulosSB.SBCore.modulos.objetos.entidade.atividadades.ItfAtividadeProgramada;
 import java.util.List;
 
 /**

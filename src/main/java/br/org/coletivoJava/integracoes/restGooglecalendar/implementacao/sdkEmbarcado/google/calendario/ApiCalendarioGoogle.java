@@ -15,7 +15,7 @@ import com.google.api.services.calendar.model.Events;
 
 import com.super_bits.modulosSB.SBCore.ConfigGeral.SBCore;
 import com.super_bits.modulosSB.SBCore.modulos.Mensagens.FabMensagens;
-import com.super_bits.modulosSB.SBCore.modulos.objetos.registro.Interfaces.atividadades.ItfAtividadeProgramada;
+import com.super_bits.modulosSB.SBCore.modulos.objetos.entidade.atividadades.ItfAtividadeProgramada;
 
 import java.io.IOException;
 import java.io.InputStream;

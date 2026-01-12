@@ -12,7 +12,7 @@ import com.google.api.services.calendar.model.Event;
 import com.google.api.services.calendar.model.EventDateTime;
 import com.super_bits.modulosSB.SBCore.ConfigGeral.SBCore;
 import com.super_bits.modulosSB.SBCore.UtilGeral.UtilCRCDataHora;
-import com.super_bits.modulosSB.SBCore.modulos.objetos.registro.Interfaces.atividadades.ItfAtividadeProgramada;
+import com.super_bits.modulosSB.SBCore.modulos.objetos.entidade.atividadades.ItfAtividadeProgramada;
 import java.io.IOException;
 import java.util.Date;
 import java.util.List;
